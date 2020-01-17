@@ -15,8 +15,13 @@ ifndef BOARD_VNDK_VERSION
 VNDK_SP_LIBRARIES := \
     libdexfile_support \
 
+
 install_in_hw_dir := \
    android.hidl.memory@1.0-impl
+
+EXTRA_VENDOR_LIBRARIES := \
+    android.hidl.base@1.0 \
+    vendor.qti.hardware.cryptfshw@1.0
 
 vndk_sp_dir := vndk-sp-$(PLATFORM_VNDK_VERSION)
 
